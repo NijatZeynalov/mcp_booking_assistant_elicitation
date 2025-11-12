@@ -1,0 +1,12 @@
+{
+  "2025-12-31": {
+    "standard": 0,
+    "deluxe": 0,
+    "suite": 1
+  },
+  "2026-01-01": {
+    "standard": 3,
+    "deluxe": 2,
+    "suite": 0
+  }
+}
