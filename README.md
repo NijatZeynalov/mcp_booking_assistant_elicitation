@@ -2,20 +2,6 @@
 
 How to pair the Model Context Protocol with a local Llama 3  model to handle a hotel booking flow that explicitly relies on elicitation. The MCP server exposes a single `book_room` tool that understands dates and room classes. When the requested room is sold out (or details are missing), the server performs elicitation via `ctx.elicit()` to gather alternative instructions before returning either a `[SUCCESS]` or `[CANCELLED]` message.
 
-### Repository Layout
-
-```
-.
-├── client/
-│   └── test_client.py    # Minimal CLI client exercising the booking logic
-├── data/
-│   └── rooms.json        # Local inventory data
-├── server/
-│   ├── main.py           # FastMCP server entry point
-│   ├── models.py         # Pydantic models used across the server
-│   └── utils.py          # Availability helpers
-└── README.md
-```
 
 ### Requirements
 
