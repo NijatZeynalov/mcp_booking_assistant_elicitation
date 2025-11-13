@@ -12,11 +12,6 @@ class DataLoadError(RuntimeError):
 
 
 def load_rooms() -> Dict[str, Dict[str, int]]:
-    """
-    Load the static rooms dataset from data/rooms.json.
-
-    The JSON payload is expected to be a mapping of date -> room_type -> capacity.
-    """
 
     try:
         with DATA_PATH.open("r", encoding="utf-8") as fp:
